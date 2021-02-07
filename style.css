@@ -41,7 +41,7 @@ p {
 /*Main*/
 
 main {
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -124,4 +124,52 @@ span {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #A9A9A9;
+}
+
+/*Media Queries*/
+
+@media screen and (min-width:800px)
+{
+    header {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    .header__content {
+        width: 30%;
+
+    }
+
+    main {
+        grid-template-columns: repeat(3,1fr);
+        width: 80%;
+        gap: 10%;
+    }
+
+    .item4,.item6 {
+        position: static;
+    }
+
+    .item5 {
+        position: relative;
+        top: 50px;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+
+    .image::after {
+        margin-left: 20px;
+        font-size: 14px;
+    }
 }
