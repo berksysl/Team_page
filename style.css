@@ -1,0 +1,127 @@
+/*Global*/
+
+* { 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #FAFAFA;
+}
+
+/*Header*/
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 30px 0;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*Main*/
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/*Grid Items*/
+
+.items {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width:100%;
+    height: 100%;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.image {
+    position: relative;
+}
+
+.image::after {
+    position: absolute;
+    width: fit-content;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    margin-left: 15px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+/*Individual items*/
+.item1 > .image::after {
+    content: 'Product Owner';
+}
+
+.item2 > .image::after {
+    content: 'Art Director';
+}
+
+.item3 > .image::after {
+    content: 'Tech Lead';
+}
+
+.item4 > .image::after {
+    content: 'UX Designer';
+}
+
+.item5 > .image::after {
+    content: 'Developer';
+}
+
+.item6 > .image::after {
+    content: 'Developer';
+}
+
+.item2, .item4,.item6 {
+    position: relative;
+    top:50px;
+}
+
+/*Footer*/
+
+footer {
+    margin-top:70px;
+    padding: 30px;
+    text-align: center;
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #A9A9A9;
+}
